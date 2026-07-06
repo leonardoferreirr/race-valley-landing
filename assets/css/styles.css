@@ -414,8 +414,6 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   .day__grid{grid-template-columns:0.92fr 1.08fr}
   .day__grid--rev .day__media{order:2}
   .gallery__grid{grid-template-columns:repeat(4,1fr)}
-  .gallery__item--tall{grid-row:span 2}
-  .gallery__item--tall img{aspect-ratio:3/5.2}
   .plans{grid-template-columns:1fr 1.15fr 1fr;align-items:stretch}
   .plan--feature{transform:scale(1.02)}
   .plan--feature:hover{transform:scale(1.02) translateY(-5px)}
