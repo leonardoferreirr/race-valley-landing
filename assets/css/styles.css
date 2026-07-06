@@ -211,6 +211,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .hero__facts li{background:rgba(10,10,11,.7);backdrop-filter:blur(4px);padding:.85rem 1.05rem;display:flex;flex-direction:column;gap:.15rem}
 .hero__facts span{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--faint);font-family:var(--fd);font-weight:600}
 .hero__facts strong{font-family:var(--fd);font-weight:700;font-size:1rem;letter-spacing:.01em}
+.hero__facts li:last-child{grid-column:1 / -1}
 
 .hero__cta{display:flex;flex-wrap:wrap;gap:.8rem}
 
@@ -401,7 +402,8 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
    RESPONSIVE
    ============================================================ */
 @media (min-width:701px){
-  .hero__facts{grid-template-columns:repeat(4,1fr);max-width:none}
+  .hero__facts{grid-template-columns:repeat(3,1fr);max-width:none}
+  .hero__facts li:last-child{grid-column:auto}
   .hero__scroll{display:flex}
   .hero__media img{object-position:50% 42%}
 }
