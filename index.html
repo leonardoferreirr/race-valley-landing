@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Race Valley · Um fim de semana, dois desafios</title>
+<meta name="description" content="Race Valley: 12 e 13 de setembro no Shopping Vale Sul, São José dos Campos. Sábado, o Grand Prix de corrida no formato da Fórmula 1. Domingo, a prova híbrida com 8 km e 8 estações. Tudo em ambiente climatizado.">
+<meta name="theme-color" content="#0A0A0B">
+<link rel="canonical" href="https://racevalley.com.br/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Race Valley · Um fim de semana, dois desafios">
+<meta property="og:description" content="Grand Prix de corrida no sábado, prova híbrida no domingo. 12 e 13 de setembro, Shopping Vale Sul, São José dos Campos. Ambiente climatizado.">
+<meta property="og:image" content="assets/photos/combo.webp">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0A0B'/%3E%3Cg fill='%23C6F621'%3E%3Crect x='6' y='8' width='5' height='5'/%3E%3Crect x='16' y='8' width='5' height='5'/%3E%3Crect x='11' y='13' width='5' height='5'/%3E%3Crect x='21' y='13' width='5' height='5'/%3E%3Crect x='6' y='18' width='5' height='5'/%3E%3Crect x='16' y='18' width='5' height='5'/%3E%3C/g%3E%3C/svg%3E">
+
+<link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/photos/hero-m.webp" media="(max-width: 700px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/photos/hero-d.webp" media="(min-width: 701px)" fetchpriority="high">
+<link rel="stylesheet" href="assets/css/styles.css">
+<noscript><style>.reveal-up,.reveal-line{opacity:1!important;transform:none!important}.lights__pod i{background:#C6F621}</style></noscript>
+</head>
+<body id="top">
+
+<a class="skip" href="#grandprix">Pular para o conteúdo</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="logo" href="#top" aria-label="Race Valley, início">
+      <span class="logo__race">RACE</span>
+      <span class="logo__row">
+        <span class="logo__flag" aria-hidden="true"></span>
+        <span class="logo__valley">VALLEY</span>
+      </span>
+    </a>
+
+    <nav class="nav__links" aria-label="Navegação principal">
+      <a href="#grandprix">Grand Prix</a>
+      <a href="#hybrid">Hybrid</a>
+      <a href="#combo">Combo</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <a class="btn btn--lime nav__cta" href="#inscricao">Inscreva-se</a>
+
+    <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <nav class="mobile-menu__links" aria-label="Navegação mobile">
+    <a href="#grandprix"><span class="mm__idx">01</span> Grand Prix</a>
+    <a href="#hybrid"><span class="mm__idx">02</span> Hybrid</a>
+    <a href="#combo"><span class="mm__idx">03</span> Combo</a>
+    <a href="#faq"><span class="mm__idx">04</span> FAQ</a>
+  </nav>
+  <a class="btn btn--lime mobile-menu__cta" href="#inscricao">Inscreva-se</a>
+  <div class="mobile-menu__foot">12 e 13 SET · Shopping Vale Sul</div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__media" aria-hidden="true">
+    <picture>
+      <source srcset="assets/photos/hero-d.webp" media="(min-width: 701px)">
+      <img src="assets/photos/hero-m.webp" alt="" fetchpriority="high" decoding="async" width="1400" height="2100">
+    </picture>
+    <div class="hero__scrim"></div>
+  </div>
+
+  <div class="hero__inner">
+    <!-- F1 start lights -->
+    <div class="lights" id="lights" aria-hidden="true">
+      <span class="lights__pod"><i></i><i></i></span>
+      <span class="lights__pod"><i></i><i></i></span>
+      <span class="lights__pod"><i></i><i></i></span>
+      <span class="lights__pod"><i></i><i></i></span>
+      <span class="lights__pod"><i></i><i></i></span>
+    </div>
+
+    <h1 class="hero__title">
+      <span class="hero__race reveal-line">RACE</span>
+      <span class="hero__flag reveal-line" aria-hidden="true"></span>
+      <span class="hero__valley reveal-line">VALLEY</span>
+    </h1>
+
+    <p class="hero__lead reveal-up">
+      Um fim de semana, dois desafios. No sábado, a <b class="hl-lime">velocidade</b> de um Grand Prix de corrida com classificatórias e grande final no formato da Fórmula 1. No domingo, a <b class="hl-blue">intensidade</b> de uma prova híbrida de verdade, que junta força e resistência. Tudo em área <b class="hl-blue">climatizada</b>, com a experiência do atleta no centro.
+    </p>
+
+    <ul class="hero__facts reveal-up" aria-label="Informações do evento">
+      <li><span>Datas</span><strong>12 · 13 SET</strong></li>
+      <li><span>Local</span><strong>Shopping Vale Sul</strong></li>
+      <li><span>Cidade</span><strong>São José dos Campos</strong></li>
+      <li><span>Ambiente</span><strong>Climatizado</strong></li>
+    </ul>
+
+    <div class="hero__cta reveal-up">
+      <a class="btn btn--lime" href="#grandprix">Quero correr no Dia 1 · Grand Prix</a>
+      <a class="btn btn--ghost" href="#hybrid">Quero correr no Dia 2 · Hybrid</a>
+    </div>
+  </div>
+
+  <a class="hero__scroll" href="#grandprix" aria-label="Rolar para baixo">
+    <span>role</span>
+    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v16M6 14l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+  </a>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Race Valley</span><i></i><span>12 · 13 Setembro</span><i></i><span>São José dos Campos</span><i></i><span>Grand Prix</span><i></i><span>Hybrid</span><i></i>
+    <span>Race Valley</span><i></i><span>12 · 13 Setembro</span><i></i><span>São José dos Campos</span><i></i><span>Grand Prix</span><i></i><span>Hybrid</span><i></i>
+  </div>
+</div>
+
+<!-- ============ POR QUE ============ -->
+<section class="why section" id="why">
+  <div class="wrap">
+    <div class="why__head">
+      <p class="kicker reveal-up">Por que o Race Valley</p>
+      <h2 class="h-section reveal-up">De quem treina forte a quem só quer <span class="hl-lime">viver a experiência</span></h2>
+      <p class="why__intro reveal-up">O Race Valley é para todo mundo, do atleta que treina crossfit, hyrox e corrida todos os dias até quem nunca disputou uma prova e só quer sentir essa energia de perto. Estrutura, categorias e ritmo pensados pra cada tipo de gente que topa o desafio.</p>
+    </div>
+
+    <ul class="pillars">
+      <li class="pillar reveal-up">
+        <span class="pillar__idx">/ 01</span>
+        <h3>Climatizado</h3>
+        <p>Ambiente indoor, sem depender de sol, chuva ou calor.</p>
+      </li>
+      <li class="pillar reveal-up">
+        <span class="pillar__idx">/ 02</span>
+        <h3>Localização central</h3>
+        <p>Dentro do Shopping Vale Sul, fácil acesso e estacionamento.</p>
+      </li>
+      <li class="pillar reveal-up">
+        <span class="pillar__idx">/ 03</span>
+        <h3>Estrutura profissional</h3>
+        <p>Organização e cronometragem à altura de uma prova de verdade.</p>
+      </li>
+      <li class="pillar reveal-up">
+        <span class="pillar__idx">/ 04</span>
+        <h3>Todos os níveis</h3>
+        <p>Categorias para quem está começando e para quem quer o pódio.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ DIA 1 — GRAND PRIX ============ -->
+<section class="day day--gp section" id="grandprix">
+  <div class="wrap day__grid">
+    <div class="day__media reveal-up">
+      <img src="assets/photos/day1.webp" alt="Atleta correndo em esteira durante treino do Race Valley" loading="lazy" decoding="async" width="1150" height="1725">
+      <span class="day__badge day__badge--gp">Dia 1 · Sáb 12/Set</span>
+    </div>
+
+    <div class="day__body">
+      <p class="kicker reveal-up">Grand Prix de corrida</p>
+      <h2 class="day__title reveal-up">VALLEY<br><span class="hl-lime">GRAND PRIX</span></h2>
+      <p class="day__desc reveal-up">Funciona como uma etapa de Fórmula 1. Ao longo do dia, os atletas disputam corridas classificatórias de 3 km, os melhores tempos garantem posição no grid. No fim do dia, a corrida final de 2 km reúne os classificados, com a ordem de largada definida pela classificatória, exatamente como na F1.</p>
+
+      <div class="stat-row reveal-up">
+        <div class="stat"><b data-count="3">3</b><span>km<br>classificatória</span></div>
+        <div class="stat"><b data-count="2">2</b><span>km<br>final</span></div>
+        <div class="stat"><b>F1</b><span>grid por<br>desempenho</span></div>
+      </div>
+
+      <ul class="feat-list reveal-up">
+        <li><strong>Corrida classificatória</strong><span>3 km, ao longo do dia</span></li>
+        <li><strong>Corrida final</strong><span>2 km, com grid de largada por desempenho</span></li>
+        <li><strong>Clínica de treino híbrido</strong><span>para atletas e profissionais</span></li>
+      </ul>
+
+      <a class="btn btn--lime reveal-up" href="#inscricao">Garantir vaga · Dia 1</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIA 2 — HYBRID ============ -->
+<section class="day day--hy section" id="hybrid">
+  <div class="wrap day__grid day__grid--rev">
+    <div class="day__media reveal-up">
+      <img src="assets/photos/day2.webp" alt="Atleta em avanço com saco de areia durante prova híbrida" loading="lazy" decoding="async" width="1150" height="1725">
+      <span class="day__badge day__badge--hy">Dia 2 · Dom 13/Set</span>
+    </div>
+
+    <div class="day__body">
+      <p class="kicker reveal-up">Prova híbrida</p>
+      <h2 class="day__title reveal-up">VALLEY<br><span class="hl-blue">HYBRID</span></h2>
+      <p class="day__desc reveal-up">A prova no padrão das competições híbridas mais disputadas do mundo: 8 km de corrida divididos em blocos de 1 km, intercalados com 8 estações funcionais. Força, resistência e estratégia, testadas do início ao fim, em estrutura premium e ambiente climatizado.</p>
+
+      <div class="stat-row reveal-up">
+        <div class="stat stat--hy"><b data-count="8">8</b><span>km<br>de corrida</span></div>
+        <div class="stat stat--hy"><b data-count="8">8</b><span>estações<br>funcionais</span></div>
+      </div>
+
+      <a class="btn btn--blue reveal-up" href="#inscricao">Garantir vaga · Dia 2</a>
+    </div>
+  </div>
+
+  <!-- Circuito: 8 estações -->
+  <div class="wrap" id="circuito">
+    <div class="circuit__head reveal-up">
+      <h3>A prova, estação por estação</h3>
+      <p>Cada bloco começa com 1 km de corrida antes da estação. Do início ao fim.</p>
+    </div>
+
+    <ol class="circuit">
+      <li class="circuit__start reveal-up"><span class="circuit__flag" aria-hidden="true"></span>Largada</li>
+
+      <li class="circuit__item reveal-up">
+        <span class="circuit__run">1 km corrida</span>
+        <div class="station">
+          <span class="station__num">01</span>
+          <h4>SkiErg</h4>
+          <p>Remada no simulador, puxada dupla</p>
+          <span class="station__dist">1000 m</span>
+        </div>
+      </li>
+      <li class="circuit__item reveal-up">
+        <span class="circuit__run">1 km corrida</span>
+        <div class="station">
+          <span class="station__num">02</span>
+          <h4>Sled Push</h4>
+          <p>Empurrar o trenó com carga</p>
+          <span class="station__dist">50 m</span>
+        </div>
+      </li>
+      <li class="circuit__item reveal-up">
+        <span class="circuit__run">1 km corrida</span>
+        <div class="station">
+          <span class="station__num">03</span>
+          <h4>Sled Pull</h4>
+          <p>Puxar o trenó com corda</p>
+          <span class="station__dist">50 m</span>
+        </div>
+      </li>
+      <li class="circuit__item reveal-up">
+        <span class="circuit__run">1 km corrida</span>
+        <div class="station">
+          <span class="station__num">04</span>
+          <h4>Burpee Broad Jump</h4>
+          <p>Burpee seguido de salto à frente</p>
+          <span class="station__dist">80 m</span>
+        </div>
+      </li>
+      <li class="circuit__item reveal-up">
+        <span class="circuit__run">1 km corrida</span>
+        <div class="station">
+          <span class="station__num">05</span>
+          <h4>Remo</h4>
+          <p>1000 m no ergômetro de remo</p>
+          <span class="station__dist">1000 m</span>
+        </div>
+      </li>
+      <li class="circuit__item reveal-up">
+        <span class="circuit__run">1 km corrida</span>
+        <div class="station">
+          <span class="station__num">06</span>
+          <h4>Farmer's Carry</h4>
+          <p>Caminhada carregando peso nas mãos</p>
+          <span class="station__dist">200 m</span>
+        </div>
+      </li>
+      <li class="circuit__item reveal-up">
+        <span class="circuit__run">1 km corrida</span>
+        <div class="station">
+          <span class="station__num">07</span>
+          <h4>Avanço com saco de areia</h4>
+          <p>Passada com carga nas costas</p>
+          <span class="station__dist">100 m</span>
+        </div>
+      </li>
+      <li class="circuit__item reveal-up">
+        <span class="circuit__run">1 km corrida</span>
+        <div class="station">
+          <span class="station__num">08</span>
+          <h4>Wall Ball</h4>
+          <p>Agachamento + arremesso no alvo</p>
+          <span class="station__dist">75 / 100 reps</span>
+        </div>
+      </li>
+
+      <li class="circuit__finish reveal-up"><span class="circuit__flag" aria-hidden="true"></span>Chegada</li>
+    </ol>
+
+    <p class="circuit__note reveal-up">Total da prova: <b>8 km de corrida · 8 estações funcionais.</b> Distâncias e cargas seguem o padrão internacional de provas híbridas, com pesos e alturas de alvo ajustados por categoria (feminino, masculino e faixas etárias).</p>
+  </div>
+</section>
+
+<!-- ============ COMBO ============ -->
+<section class="combo section" id="combo">
+  <div class="combo__media" aria-hidden="true">
+    <img src="assets/photos/combo.webp" alt="" loading="lazy" decoding="async" width="1500" height="1000">
+    <div class="combo__scrim"></div>
+  </div>
+  <div class="wrap combo__inner">
+    <p class="kicker reveal-up">Pacote fim de semana</p>
+    <h2 class="combo__title reveal-up"><span class="hl-lime">Encare</span> os <span class="hl-blue">dois dias</span></h2>
+    <div class="combo__days reveal-up" aria-hidden="true">
+      <span class="combo__day combo__day--gp">SÁB · Grand Prix</span>
+      <span class="combo__plus">+</span>
+      <span class="combo__day combo__day--hy">DOM · Hybrid</span>
+    </div>
+    <p class="combo__desc reveal-up">Grand Prix no sábado, Hybrid no domingo. Pacote combo com condição especial para quem topar os dois desafios.</p>
+    <a class="btn btn--lime btn--lg reveal-up" href="#inscricao">Quero os dois dias</a>
+  </div>
+</section>
+
+<!-- ============ GALERIA ============ -->
+<section class="gallery section" id="galeria" aria-label="Galeria do evento">
+  <div class="wrap gallery__head">
+    <p class="kicker reveal-up">A energia de perto</p>
+    <h2 class="h-section reveal-up">Estrutura de prova de verdade</h2>
+  </div>
+  <div class="gallery__grid">
+    <figure class="gallery__item gallery__item--tall reveal-up"><img src="assets/photos/g1.webp" alt="Dupla em farmer's carry com kettlebells" loading="lazy" decoding="async" width="880" height="1320"></figure>
+    <figure class="gallery__item reveal-up"><img src="assets/photos/g3.webp" alt="Atleta em wall ball" loading="lazy" decoding="async" width="880" height="1320"></figure>
+    <figure class="gallery__item gallery__item--tall reveal-up"><img src="assets/photos/g2.webp" alt="Atleta no SkiErg" loading="lazy" decoding="async" width="880" height="1320"></figure>
+    <figure class="gallery__item reveal-up"><img src="assets/photos/g4.webp" alt="Atleta no simulador de esqui" loading="lazy" decoding="async" width="880" height="1320"></figure>
+  </div>
+</section>
+
+<!-- ============ INSCRIÇÃO ============ -->
+<section class="enroll section" id="inscricao">
+  <div class="wrap">
+    <div class="enroll__head">
+      <p class="kicker reveal-up">Inscrições</p>
+      <h2 class="enroll__title reveal-up">Garanta sua vaga no <br><span class="hl-lime">Race Valley</span></h2>
+      <p class="enroll__meta reveal-up">12 e 13 de setembro · Shopping Vale Sul, São José dos Campos</p>
+    </div>
+
+    <div class="plans">
+      <article class="plan reveal-up">
+        <span class="plan__tag plan__tag--gp">Dia 1 · Sáb</span>
+        <h3>Grand Prix</h3>
+        <p>Corrida no formato Fórmula 1. Classificatória de 3 km e final de 2 km.</p>
+        <a class="btn btn--lime plan__btn" href="#" data-cta="dia1">Garantir vaga · Dia 1</a>
+      </article>
+
+      <article class="plan plan--feature reveal-up">
+        <span class="plan__tag plan__tag--combo">Combo · Fim de semana</span>
+        <h3>Os dois dias</h3>
+        <p>Grand Prix no sábado e Hybrid no domingo, com condição especial para os dois desafios.</p>
+        <a class="btn btn--lime btn--lg plan__btn" href="#" data-cta="combo">Quero os dois dias</a>
+      </article>
+
+      <article class="plan reveal-up">
+        <span class="plan__tag plan__tag--hy">Dia 2 · Dom</span>
+        <h3>Hybrid</h3>
+        <p>Prova híbrida com 8 km de corrida e 8 estações funcionais.</p>
+        <a class="btn btn--blue plan__btn" href="#" data-cta="dia2">Garantir vaga · Dia 2</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq section" id="faq">
+  <div class="wrap faq__grid">
+    <div class="faq__aside">
+      <p class="kicker reveal-up">Dúvidas</p>
+      <h2 class="h-section reveal-up">Perguntas <span class="hl-lime">frequentes</span></h2>
+      <p class="faq__aside-txt reveal-up">Não achou o que procurava? As inscrições trazem o regulamento completo, endereço e mapa de acesso.</p>
+    </div>
+
+    <div class="faq__list">
+      <details class="qa reveal-up">
+        <summary>Preciso ser atleta para participar?<span class="qa__ic" aria-hidden="true"></span></summary>
+        <div class="qa__a"><p>Não. O Race Valley recebe desde quem está começando até atletas de alto rendimento, cada prova tem categorias pensadas para todos os níveis.</p></div>
+      </details>
+      <details class="qa reveal-up">
+        <summary>Posso me inscrever nos dois dias?<span class="qa__ic" aria-hidden="true"></span></summary>
+        <div class="qa__a"><p>Sim. Você pode escolher só um dia, Grand Prix ou Hybrid, ou encarar os dois com o pacote combo, com condição especial de preço.</p></div>
+      </details>
+      <details class="qa reveal-up">
+        <summary>Como funciona o ambiente climatizado?<span class="qa__ic" aria-hidden="true"></span></summary>
+        <div class="qa__a"><p>O evento acontece 100% em área coberta e climatizada, dentro do Shopping Vale Sul, sem depender do sol ou da chuva, em qualquer um dos dois dias.</p></div>
+      </details>
+      <details class="qa reveal-up">
+        <summary>Onde fica o Shopping Vale Sul?<span class="qa__ic" aria-hidden="true"></span></summary>
+        <div class="qa__a"><p>Em São José dos Campos (SP). Endereço completo e mapa de acesso serão divulgados na página de inscrições.</p></div>
+      </details>
+      <details class="qa reveal-up">
+        <summary>Tem estacionamento?<span class="qa__ic" aria-hidden="true"></span></summary>
+        <div class="qa__a"><p>Sim, o Shopping Vale Sul conta com estacionamento próprio para o público do evento.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <a class="logo logo--lg" href="#top" aria-label="Race Valley">
+        <span class="logo__race">RACE</span>
+        <span class="logo__row"><span class="logo__flag" aria-hidden="true"></span><span class="logo__valley">VALLEY</span></span>
+      </a>
+      <p class="footer__meta">12 e 13 de setembro<br>Shopping Vale Sul, São José dos Campos</p>
+    </div>
+    <nav class="footer__nav" aria-label="Rodapé">
+      <a href="#grandprix">Grand Prix</a>
+      <a href="#hybrid">Hybrid</a>
+      <a href="#combo">Combo</a>
+      <a href="#faq">FAQ</a>
+      <a href="#inscricao">Inscreva-se</a>
+    </nav>
+  </div>
+  <div class="footer__bar">
+    <span>RACE VALLEY · TODOS OS DIREITOS RESERVADOS</span>
+    <span class="footer__flag" aria-hidden="true"></span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
