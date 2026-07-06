@@ -71,7 +71,7 @@
   <div class="hero__media" aria-hidden="true">
     <picture>
       <source srcset="assets/photos/hero-d.webp" media="(min-width: 701px)">
-      <img src="assets/photos/hero-m.webp" alt="" fetchpriority="high" decoding="async" width="800" height="1200">
+      <img src="assets/photos/hero-m.webp" alt="" fetchpriority="high" decoding="async" width="800" height="1070">
     </picture>
     <div class="hero__scrim"></div>
   </div>
@@ -103,7 +103,7 @@
     </ul>
 
     <div class="hero__cta reveal-up">
-      <a class="btn btn--lime" href="#grandprix">Quero correr no Dia 1 · Grand Prix</a>
+      <a class="btn btn--ghost" href="#grandprix">Quero correr no Dia 1 · Grand Prix</a>
       <a class="btn btn--ghost" href="#hybrid">Quero correr no Dia 2 · Hybrid</a>
     </div>
   </div>
@@ -207,12 +207,12 @@
 
   <!-- Circuito: 8 estações -->
   <div class="wrap" id="circuito">
-    <div class="circuit__head reveal-up">
-      <h3>A prova, estação por estação</h3>
-      <p>Cada bloco começa com 1 km de corrida antes da estação. Do início ao fim.</p>
-    </div>
+    <details class="circuit-acc reveal-up">
+      <summary class="circuit-acc__btn"><span>Confira a prova completa, estação por estação</span><span class="circuit-acc__ic" aria-hidden="true"></span></summary>
+      <div class="circuit-acc__body">
+      <p class="circuit-acc__lead">Cada bloco começa com 1 km de corrida antes da estação. Do início ao fim.</p>
 
-    <ol class="circuit">
+      <ol class="circuit">
       <li class="circuit__start reveal-up"><span class="circuit__flag" aria-hidden="true"></span>Largada</li>
 
       <li class="circuit__item reveal-up">
@@ -291,7 +291,9 @@
       <li class="circuit__finish reveal-up"><span class="circuit__flag" aria-hidden="true"></span>Chegada</li>
     </ol>
 
-    <p class="circuit__note reveal-up">Total da prova: <b>8 km de corrida · 8 estações funcionais.</b> Distâncias e cargas seguem o padrão internacional de provas híbridas, com pesos e alturas de alvo ajustados por categoria (feminino, masculino e faixas etárias).</p>
+      <p class="circuit__note">Total da prova: <b>8 km de corrida · 8 estações funcionais.</b> Distâncias e cargas seguem o padrão internacional de provas híbridas, com pesos e alturas de alvo ajustados por categoria (feminino, masculino e faixas etárias).</p>
+      </div>
+    </details>
   </div>
 </section>
 

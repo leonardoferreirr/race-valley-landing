@@ -102,8 +102,8 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .btn--lime:hover{transform:translateY(-3px);box-shadow:0 14px 34px -12px rgba(198,246,33,.65)}
 .btn--blue{background:var(--blue);color:var(--ink)}
 .btn--blue:hover{transform:translateY(-3px);box-shadow:0 14px 34px -12px rgba(59,182,255,.6)}
-.btn--ghost{background:transparent;color:var(--white);border-color:var(--line-2)}
-.btn--ghost:hover{border-color:var(--white);transform:translateY(-3px)}
+.btn--ghost{background:rgba(255,255,255,.05);color:var(--white);border-color:rgba(255,255,255,.32)}
+.btn--ghost:hover{border-color:var(--white);background:rgba(255,255,255,.12);transform:translateY(-3px)}
 
 /* ---------- Checkered flag (reusable) ---------- */
 .logo__flag,.hero__flag,.circuit__flag,.footer__flag{
@@ -179,12 +179,12 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
    ============================================================ */
 .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;padding-bottom:clamp(2.5rem,6vh,5rem);padding-top:6rem}
 .hero__media{position:absolute;inset:0;z-index:0}
-.hero__media img{width:100%;height:100%;object-fit:cover;object-position:46% 34%;filter:grayscale(1) contrast(1.08) brightness(.8)}
+.hero__media img{width:100%;height:100%;object-fit:cover;object-position:46% 34%;filter:grayscale(1) contrast(1) brightness(.4) blur(3px);transform:scale(1.06)}
 .hero__scrim{
   position:absolute;inset:0;
   background:
-    linear-gradient(to top,var(--bg) 4%,rgba(10,10,11,.15) 55%,rgba(10,10,11,.55) 100%),
-    linear-gradient(to right,var(--bg) 8%,rgba(10,10,11,.35) 48%,transparent 90%);
+    linear-gradient(to top,var(--bg) 5%,rgba(10,10,11,.4) 55%,rgba(10,10,11,.6) 100%),
+    linear-gradient(to right,rgba(10,10,11,.74) 0%,rgba(10,10,11,.44) 55%,rgba(10,10,11,.3) 100%);
 }
 .hero__inner{position:relative;z-index:2;width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:var(--pad)}
 
@@ -303,13 +303,27 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .circuit__note{margin-top:1.8rem;color:var(--muted);font-size:.95rem;max-width:70ch}
 .circuit__note b{color:var(--white);font-weight:600}
 
+/* Circuit accordion (Dia 2 — colapsado por padrão) */
+.circuit-acc{margin-top:clamp(2.5rem,5vw,4rem);text-align:center}
+.circuit-acc__btn{list-style:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:.7em;font-family:var(--fd);font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:clamp(.9rem,1.6vw,1.05rem);color:var(--blue);border:1.5px solid rgba(59,182,255,.5);border-radius:100px;padding:1.05em 1.8em;transition:background .3s var(--ease),border-color .3s var(--ease)}
+.circuit-acc__btn::-webkit-details-marker{display:none}
+.circuit-acc__btn:hover{background:rgba(59,182,255,.1);border-color:var(--blue)}
+.circuit-acc__ic{position:relative;width:14px;height:14px;flex:none}
+.circuit-acc__ic::before,.circuit-acc__ic::after{content:"";position:absolute;background:var(--blue);border-radius:2px;transition:transform .3s var(--ease),opacity .3s}
+.circuit-acc__ic::before{top:6px;left:0;width:14px;height:2px}
+.circuit-acc__ic::after{left:6px;top:0;width:2px;height:14px}
+.circuit-acc[open] .circuit-acc__ic::after{transform:rotate(90deg);opacity:0}
+.circuit-acc__body{margin-top:2.4rem;text-align:left}
+.circuit-acc__lead{color:var(--muted);margin-bottom:1.8rem;max-width:62ch}
+.circuit-acc[open] .reveal-up{opacity:1;transform:none}
+
 /* ============================================================
    COMBO
    ============================================================ */
 .combo{position:relative;overflow:hidden;text-align:center}
 .combo__media{position:absolute;inset:0;z-index:0}
-.combo__media img{width:100%;height:100%;object-fit:cover;object-position:center 32%;filter:grayscale(1) contrast(1.02) brightness(.34)}
-.combo__scrim{position:absolute;inset:0;background:radial-gradient(circle at 50% 42%,rgba(10,10,11,.5),var(--bg) 72%)}
+.combo__media img{width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:grayscale(1) contrast(1) brightness(.16) blur(5px);transform:scale(1.08)}
+.combo__scrim{position:absolute;inset:0;background:radial-gradient(circle at 50% 44%,rgba(10,10,11,.68),var(--bg) 60%)}
 .combo__inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center}
 .combo__title{font-family:var(--fd);font-weight:800;text-transform:uppercase;font-size:clamp(2.2rem,6.5vw,4.6rem);line-height:.98;letter-spacing:-.01em}
 .combo__days{display:flex;align-items:center;gap:1rem;margin:1.8rem 0;flex-wrap:wrap;justify-content:center}
